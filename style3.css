@@ -1,0 +1,40 @@
+
+body{
+    perspective: 700px;
+    background-color: black;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+section , .front, .back{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    float: left;
+      
+} 
+.back{
+    background-color:blue ;
+    transform: rotateY(180deg); 
+}
+section{
+    margin-left: 15%;
+    transform-style: preserve-3d ;
+     position: relative;
+     transition: all 2s;
+     margin-top: 100px;
+}
+.front, .back{
+    position: absolute ;
+} 
+.front{
+    z-index: 1 ;
+    backface-visibility: hidden ;
+    background-image: url(../Images/1645609762280.jpg );
+     background-size: cover ;
+    
+}
+section:hover{
+    transform: rotateY(180deg);
+} 
+ 
